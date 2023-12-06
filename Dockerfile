@@ -19,8 +19,8 @@ RUN usermod -aG sudo "$my_user"
 COPY sshd_config /etc/ssh/sshd_config
 RUN mkdir /run/sshd
 
-# ssh:22
-EXPOSE 22
+# ssh:2222
+EXPOSE 2222
 
 #install opencv
 RUN apt-get update && apt-get install -y \
